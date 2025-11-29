@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Web Project</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Web Project</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="datetime-section">
+      <div class="datetime-container">
+        <h2>Current Date & Time</h2>
+        <div id="datetime" class="datetime-display">
+          Loading...
+        </div>
+        <button onclick="updateDateTime()" class="refresh-btn">Refresh Time</button>
+      </div>
+    </section>
+
+    <section class="hero">
+      <img src="hero.svg" alt="Hero graphic" class="card">
+      <h2>Building the Web One Tutorial at a Time</h2>
+    </section>
+
+    <section class="banner-section">
+      <h2 class="visually-hidden">Project Overview</h2>
+      <img src="banner.jpg" alt="Decorative banner" class="banner">
+      <p>Adding graphic design elements makes your web project more engaging and professional.</p>
+    </section>
+
+    <section class="card media-section">
+      <h2>Quick Project Overview</h2>
+      <video controls class="media-player">
+        <source src="video/overview.mp4" type="video/mp4">
+        <source src="video/overview.webm" type="video/webm">
+        Your browser does not support the video element.
+      </video>
+      <p class="media-caption">Watch a quick overview of our web project features</p>
+    </section>
+
+    <section class="features">
+      <h2 class="visually-hidden">Project Features</h2>
+      <div class="card">
+        <img src="card.svg" alt="Feature illustration">
+        <h3>Responsive Design</h3>
+        <p>Works perfectly on all devices from desktop to mobile.</p>
+      </div>
+      <div class="card">
+        <img src="map.svg" alt="Feature illustration">
+        <h3>Modern Features</h3>
+        <p>Includes multimedia, forms, tables, and dynamic content.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Web Project</p>
+    <div id="footer-date" class="footer-date"></div>
+  </footer>
+
+  <script src="datetime.js"></script>
+</body>
+</html>
