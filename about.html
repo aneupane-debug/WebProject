@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="layout.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body class="about-page">
 
   <header>
     <h1>About This Project</h1>
@@ -20,25 +21,21 @@
   </header>
 
   <main>
-    <!-- TUTORIAL 9 ADDITION: DATE/TIME DISPLAY -->
     <section class="datetime-section">
       <div class="datetime-container">
         <h2>Current Date & Time</h2>
-        <div id="datetime" class="datetime-display">
-          Loading...
-        </div>
+        <div id="datetime" class="datetime-display">Loading...</div>
         <button onclick="updateDateTime()" class="refresh-btn">Refresh Time</button>
       </div>
     </section>
 
     <img src="banner.jpg" alt="Decorative banner" class="banner">
-    
+
     <section class="card">
       <h2>Project Purpose</h2>
       <p>This project demonstrates the use of layout and graphic design techniques in web development.</p>
     </section>
 
-    <!-- TUTORIAL 8 ADDITION: SOUND ELEMENT -->
     <section class="card media-section">
       <h2>Project Audio Introduction</h2>
       <audio controls class="media-player">
@@ -49,7 +46,6 @@
       <p class="media-caption">Listen to a brief introduction about this web project</p>
     </section>
 
-    <!-- TUTORIAL 8 ADDITION: VIDEO ELEMENT -->
     <section class="card media-section">
       <h2>Project Video Demonstration</h2>
       <video controls class="media-player">
@@ -60,7 +56,6 @@
       <p class="media-caption">Watch a demonstration of the project features</p>
     </section>
 
-    <!-- TUTORIAL 6 ADDITION: TABLE -->
     <section class="card">
       <h2>Development Roadmap</h2>
       <div class="table-container">
@@ -105,36 +100,58 @@
             </tr>
           </tbody>
           <tfoot>
-             <tr>
-                <td colspan="3" class="table-footer">Next Step: Final Project Presentation</td>
-             </tr>
+            <tr>
+              <td colspan="3" class="table-footer">Next Step: Final Project Presentation</td>
+            </tr>
           </tfoot>
         </table>
       </div>
     </section>
-  <section id="project-data" aria-labelledby="project-data-heading">
-<h2 id="project-data-heading">Project Resources Summary</h2>
-<table class="project-table">
-<caption>Files, Purpose, and Notes</caption>
-<thead><tr><th scope="col">File</th><th scope="col">Purpose</th><th scope="col">Notes</th></tr></thead>
-<tbody>
-<tr><td rowspan="2">index.html</td><td>Homepage</td><td>Contains hero and banner</td></tr>
-<tr><td>Navigation</td><td>Consistent across pages</td></tr>
-<tr><td>contact.html</td><td colspan="2">Contact form with added elements</td></tr>
-<tr><td>styles.css</td><td>Styling</td><td>External stylesheet</td></tr>
-</tbody>
-<tfoot><tr><td colspan="3">Table includes caption, rowspan, colspan.</td></tr></tfoot>
-</table>
-</section>
-</main>
+
+    <section id="project-data" aria-labelledby="project-data-heading">
+      <h2 id="project-data-heading">Project Resources Summary</h2>
+      <table class="project-table">
+        <caption>Files, Purpose, and Notes</caption>
+        <thead>
+          <tr>
+            <th scope="col">File</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">index.html</td>
+            <td>Homepage</td>
+            <td>Contains hero and banner</td>
+          </tr>
+          <tr>
+            <td>Navigation</td>
+            <td>Consistent across pages</td>
+          </tr>
+          <tr>
+            <td>contact.html</td>
+            <td colspan="2">Contact form with added elements</td>
+          </tr>
+          <tr>
+            <td>styles.css</td>
+            <td>Styling</td>
+            <td>External stylesheet</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">Table includes caption, rowspan, colspan.</td></tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 My Web Project</p>
-    <!-- TUTORIAL 9 ADDITION: FOOTER DATE/TIME -->
     <div id="footer-date" class="footer-date"></div>
   </footer>
 
-  <!-- TUTORIAL 9 ADDITION: JAVASCRIPT -->
   <script src="datetime.js"></script>
+
 </body>
 </html>
