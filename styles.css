@@ -332,28 +332,51 @@ textarea:focus {
     display: block;
 }
 
-/* Updated datetime-section to match card styling */
+/* UPDATED datetime-section to match card styling */
 .datetime-section {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto 30px auto;
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto 20px auto;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* New styles for datetime container */
 .datetime-container h2 {
-    margin-bottom: 10px;
-    font-size: 1.6em;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-/* New style for refresh button */
+.datetime-container p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
 .refresh-btn {
-    margin-top: 15px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
     display: inline-block;
+}
+
+.refresh-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 .footer-date {
