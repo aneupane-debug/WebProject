@@ -1,3 +1,10 @@
+/*
+   Student Name: [YOUR NAME HERE]
+   Date: [CURRENT DATE]
+   Filename: styles.css
+   Supporting files: reset.css, layout.css, index.html, about.html, contact.html
+*/
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -386,38 +393,38 @@ textarea:focus {
     font-style: italic;
 }
 
-.project-table{
-    width:100%;
-    border-collapse:collapse;
-    margin:1.25rem 0;
-    font-family:inherit;
-    font-size:.95rem;
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-family: inherit;
+    font-size: .95rem;
 }
 
-.project-table caption{
-    caption-side:top;
-    text-align:left;
-    font-weight:600;
-    margin-bottom:.35rem;
+.project-table caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: .35rem;
 }
 
 .project-table th,
-.project-table td{
-    border:1px solid #cfcfcf;
-    padding:.6rem;
+.project-table td {
+    border: 1px solid #cfcfcf;
+    padding: .6rem;
 }
 
-.project-table thead th{
-    background:#efefef;
-    text-align:left;
+.project-table thead th {
+    background: #efefef;
+    text-align: left;
 }
 
-.project-table tbody tr:nth-child(even){
-    background:#fafafa;
+.project-table tbody tr:nth-child(even) {
+    background: #fafafa;
 }
 
-.project-table tfoot td{
-    font-size:.9rem;
-    color:#333;
-    background:#f8f8f8;
+.project-table tfoot td {
+    font-size: .9rem;
+    color: #333;
+    background: #f8f8f8;
 }
